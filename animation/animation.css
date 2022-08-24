@@ -1,0 +1,85 @@
+body{
+   margin: 0px;
+   background-color: black;
+
+   /*  width: 100vw;
+    height: 100vh;
+    background-image: url(/animation/image/Andromeda_Galaxy_560mm_FL.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;*/
+}
+
+/*img{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}*/
+
+@keyframes sun {
+   0%{transform: rotate(0deg) ;
+          border-radius: 50%;  
+    }
+    50%{
+        transform: rotate(180deg) ;
+          border-radius: 50%;
+    }
+    100%{transform: rotate(360deg);
+          border-radius: 40%;
+    }
+}
+
+.sun{
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    animation: sun 1s linear infinite;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+}
+
+@keyframes earth {
+0%{transform: rotate(0deg) translateX(200px) ;
+        border-radius: 50%;  
+   }
+50%{
+      transform: rotate(180deg) translateX(200px);
+        border-radius: 50%;
+    }
+100%{transform: rotate(360deg) translateX(200px);
+        border-radius: 40%;
+    }
+
+}
+.earth{
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+    animation: earth 10000000s linear infinite;
+    position: absolute;
+}
+
+@keyframes moon {
+    0%{
+        transform: rotate(0deg) translate(70px);
+        border-radius: 50%;
+    }
+    50%{
+        transform: rotate(180deg) translate(70px);
+        border-radius: 50%;
+    }
+    100%{
+        transform: rotate(360deg) translate(70px);
+        border-radius: 40%;
+    }
+}
+
+.moon{
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    animation: moon 5s linear infinite;
+    position: absolute;
+
+    
+}
